@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Encryptor</h2>
+    </header>
+    <main>
+        <!--This section is for placing the text you want to encrypt-->
+        <div class="container">
+            <section class="encrypt_section">
+                <textarea id="text-to-encrypt" class="text-to-encrypt"  placeholder="Please type the text you want to to encrypt"></textarea>
+                <p class="lowercase">Please only lowercase letters and no accents.</p>
+                <div class="center-button">
+                    <button onclick="Btn_encrypt()" id="Btn_encrypt" class="btn">Encrypt</button>
+                    <button onclick="Btn_decrypt()" id="Btn_decrypt" class="btn">Decrypt</button>
+                </div>
+            </section>
+    
+            <!--This section is for showing your encrypted text-->
+            <section class="results_section">
+                <textarea class="encrypted-text" id="encrypted-text" disabled></textarea>
+                <div class="center-button">
+                    <button id="Btn_copy" onclick="Btn_copy()" class="btn">Copy</button>
+                </div>
+                
+    
+            </section>
+        </div>
+        
+
+    </main>
+    <footer>
+        <p>Github: <a href="https://github.com/josveji">@josveji</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

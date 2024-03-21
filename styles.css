@@ -1,0 +1,120 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+header{
+    background: #292C35;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main{
+    background: #17181D;
+    color: white;
+}
+
+.container{
+    display: flex;
+    height: 827px; /*Revisar luego para el responsive*/
+    
+    
+}
+
+.encrypt_section{
+    border-radius: 30px;
+    padding: 20px;
+    background: #292C35;
+    width: 60%;
+    margin: 20px;
+    margin-right: 10px;
+    /*height: 400px;*/
+    /*margin: 20px*/
+}
+
+
+.lowercase:before{
+    content:"⚠ " 
+}
+
+.lowercase{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.results_section{
+    padding: 20px;
+    background: #c4cadc;
+    border-radius: 30px;
+    width:20%;
+    margin: 20px;
+    margin-left: 10px;
+    /*margin: 20px;*/
+}
+
+.text-to-encrypt{
+    padding: 20px;
+ /* Ancho del textarea */
+    height: 82%; /* Alto del textarea */
+    width: 96.5%;
+    font-size: 1.5em;
+    background: none;
+    color: white;
+}
+.text-to-encrypt::placeholder{
+    color: white;
+}
+
+
+textarea{
+    resize: none;
+    /*display: block;*/
+    border-radius: 30px;
+    /*margin: 10px;*/
+    border: none;
+    outline: none;
+}
+
+.encrypted-text{
+    height: 89%;
+    width: 89%;
+    padding: 20px;
+    font-size: 1.5em;
+    background: none;
+}
+
+/*.center-button{
+    margin:;
+}*/
+
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    width: 250px;
+    padding: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+footer{
+    background: #292C35;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
