@@ -7,29 +7,39 @@ body {
 
 
 header{
-    background: #292C35;
+    /*background: #292C35;*/
+    background: #17181D;
     padding: 20px;
     color: white;
     font-weight: bold;
     font-size: 30px;
 }
 
+.logo-title{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#logo{
+    height: 50px;
+}
+
 main{
-    background: #17181D;
+    /*background: #17181D;*/
+    background: black;
     color: white;
 }
 
 .container{
     display: flex;
     height: 827px; /*Revisar luego para el responsive*/
-    
-    
 }
 
 .encrypt_section{
     border-radius: 30px;
     padding: 20px;
-    background: #292C35;
+    /*background: #292C35;*/
+    background: #17181D;
     width: 60%;
     margin: 20px;
     margin-right: 10px;
@@ -49,7 +59,7 @@ main{
 
 .results_section{
     padding: 20px;
-    background: #c4cadc;
+    background: #3eb1c5;
     border-radius: 30px;
     width:20%;
     margin: 20px;
@@ -64,7 +74,7 @@ main{
     width: 96.5%;
     font-size: 1.5em;
     background: none;
-    color: white;
+    color: #3eb1c5;
 }
 .text-to-encrypt::placeholder{
     color: white;
@@ -86,6 +96,7 @@ textarea{
     padding: 20px;
     font-size: 1.5em;
     background: none;
+    color: black;
 }
 
 /*.center-button{
@@ -101,13 +112,34 @@ textarea{
     font-family: "Inter", sans-serif;
     font-size: 15px;
     border-radius: 30px;
+    
+    
+}
+
+#Btn_encrypt{
+    background: #3eb1c5;
+    color: white;
+    border: none;
+}
+
+#Btn_decrypt{
+    background: black;
+    color: white;
+    border-color: #3eb1c5;
+}
+
+#Btn_copy{
+    background: white;
+    color: black;
+    border-color: none;
 }
 
 footer{
-    background: #292C35;
+    background: #17181D;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    font-size: 16px;
 }
 
 a {
