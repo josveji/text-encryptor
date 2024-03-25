@@ -38,9 +38,8 @@ main{
 .encrypt_section{
     border-radius: 30px;
     padding: 20px;
-    /*background: #292C35;*/
     background: #17181D;
-    width: 60%;
+    width: 75%;
     margin: 20px;
     margin-right: 10px;
     /*height: 400px;*/
@@ -55,16 +54,21 @@ main{
 .lowercase{
     margin: 10px;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .results_section{
     padding: 20px;
     background: #3eb1c5;
+    /*background: #17181D*/
     border-radius: 30px;
     width:20%;
     margin: 20px;
     margin-left: 10px;
     /*margin: 20px;*/
+    box-shadow: 0px 2px 18px 0px #3eb1c5;
+
 }
 
 .text-to-encrypt{
@@ -72,7 +76,7 @@ main{
  /* Ancho del textarea */
     height: 82%; /* Alto del textarea */
     width: 96.5%;
-    font-size: 1.5em;
+    font-size: 2em;
     background: none;
     color: #3eb1c5;
 }
@@ -91,17 +95,13 @@ textarea{
 }
 
 .encrypted-text{
-    height: 89%;
+    height: 86%;
     width: 89%;
     padding: 20px;
     font-size: 1.5em;
     background: none;
-    color: black;
+    color: white;
 }
-
-/*.center-button{
-    margin:;
-}*/
 
 .btn{
     display: inline-block;
@@ -112,26 +112,45 @@ textarea{
     font-family: "Inter", sans-serif;
     font-size: 15px;
     border-radius: 30px;
-    
-    
+    border: none;
+    margin: 5px;
 }
 
 #Btn_encrypt{
     background: #3eb1c5;
     color: white;
-    border: none;
+    box-shadow: 0px 2px 18px 0px #3eb1c5;
+}
+
+#Btn_encrypt:hover{
+    background-color: #14dcffc7;
+    cursor: pointer;
 }
 
 #Btn_decrypt{
     background: black;
     color: white;
-    border-color: #3eb1c5;
+    box-shadow: 0px 2px 18px 0px #3eb1c5;
+}
+
+#Btn_decrypt:hover{
+    background-color: #17181D;
+    /*background-color: #3eb1c5;*/
+    cursor: pointer;
 }
 
 #Btn_copy{
     background: white;
     color: black;
-    border-color: none;
+    /*box-shadow: 0px 2px 18px 0px #17181D;*/
+    box-shadow: 0px 2px 18px 0px white;
+}
+
+#Btn_copy:hover{
+    color: white;
+    background: #17181D;
+    /*background-color: #3eb1c5;*/
+    cursor: pointer;
 }
 
 footer{
@@ -149,4 +168,10 @@ a {
 a:visited{
     color: white;
 }
+
+.center-button{
+    display: flex;
+    justify-content: center;
+}
+
 
